@@ -1,3 +1,6 @@
+#Jurrian Schouten
+#Pizza calculator
+
 small = 3.99
 medium = 5.00
 large = 6.00
@@ -14,7 +17,14 @@ print("Dit kost", aantalSmall * small)
 aantalMedium = float(input("Hoeveel medium pizza's wil je? "))
 print("Dit kost", aantalMedium * medium)
 
-aantalLarge = float(input("Hoeveel large pizza's wil je?"))
+aantalLarge = float(input("Hoeveel large pizza's wil je? "))
 print("Dit kost", aantalLarge * large)
 
-print("Totaalprijs =", aantalSmall * small + aantalMedium * medium + aantalLarge * large)
+print("--------------------------------------")
+print("| Uw bestelling:")
+print("| medium:","€", aantalMedium * medium)
+print("| small: ","€", aantalSmall * small)
+print("| large: ","€", aantalLarge * large)
+print("|")
+print("| Totaalprijs =", aantalSmall * small + aantalMedium * medium + aantalLarge * large)
+print("--------------------------------------")
