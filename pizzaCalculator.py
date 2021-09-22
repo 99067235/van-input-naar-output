@@ -1,25 +1,20 @@
 small = 3.99
-medium = 5
-large = 6
+medium = 5.00
+large = 6.00
 
 #klant krijgt de prijzen te zien.
 print("""Prijzen in euro's
 small = 3.99
 medium = 5
 large = 6""")
-grootte = input("Welke pizza wil je?(Antwoord met s, m, of l)").upper()
 
-if grootte == "S":
-    prijs = small
+aantalSmall = float(input("Hoeveel small pizza's wil je? "))
+print("Dit kost", aantalSmall * small)
 
-if grootte == "M":
-    prijs = medium
+aantalMedium = float(input("Hoeveel medium pizza's wil je? "))
+print("Dit kost", aantalMedium * medium)
 
-if grootte == "L":
-    prijs = large
+aantalLarge = float(input("Hoeveel large pizza's wil je?"))
+print("Dit kost", aantalLarge * large)
 
-print(prijs)
-#Aantal
-aantal = int(input("Hoeveel pizzas wil je?(Antwoord met cijfer)"))
-#Prijs
-print(prijs * aantal)
+print("Totaalprijs =", aantalSmall * small + aantalMedium * medium + aantalLarge * large)
